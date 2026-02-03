@@ -1,0 +1,25 @@
+[llm]
+# Поддерживаемые провайдеры: openai, anthropic, local
+provider = "openai"
+model = "gpt-4o-mini"
+# Заполните ваш API ключ:
+api_key = ""
+
+[search]
+# Tavily API ключ (уже должен быть у вас):
+tavily_api_key = ""
+max_results = 10
+search_depth = "advanced"  # basic или advanced
+
+[storage]
+# Путь к SQLite БД (относительно корня проекта)
+db_path = "data/research.db"
+
+[output]
+# Формат вывода: markdown, json, или both
+format = "both"
+save_path = "outputs/"
+
+[ui]
+# Интерактивный режим: true - спрашивать подтверждение на каждом шаге
+interactive = true
